@@ -69,7 +69,20 @@ class DraggableImageView: UIView {
                 sender.view?.center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y)
             }
         } else if sender.state == .ended {
-            
+            if translation.x > 100 {
+                UIView.animate(withDuration: 0.3, animations: {
+                    sender.view?.center.x = 1000
+                })
+            } else if translation.x < -100 {
+                UIView.animate(withDuration: 0.3, animations: {
+                    sender.view?.center.x = -1000
+                })
+            } else {
+                UIView.animate(withDuration: 0.3, animations: {
+                    sender.view?.center = self.originalCenter
+                    sender.view?.transform = .identity
+                })
+            }
         }
         
         

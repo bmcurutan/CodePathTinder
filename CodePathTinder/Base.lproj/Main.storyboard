@@ -24,7 +24,7 @@
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleAspectFill" misplaced="YES" id="pdr-1R-GKo" customClass="DraggableImageView" customModule="CodePathTinder" customModuleProvider="target">
                                 <frame key="frameInset" minX="8" minY="72" width="304" height="304"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
