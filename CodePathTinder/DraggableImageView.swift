@@ -48,14 +48,26 @@ class DraggableImageView: UIView {
     
     
     @IBAction func onPanGesture(_ sender: UIPanGestureRecognizer) {
+        let defaultRotationAngle: CGFloat = 5
+        let defaultRotationAngleInRadians = defaultRotationAngle.degreesToRadians
         
         let translation = sender.translation(in: self)
-        
+        let touchLocation = sender.location(in: self)
         
         if sender.state == .began {
             originalCenter = sender.view?.center
+            
         } else if sender.state == .changed {
-            sender.view?.center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y)
+            
+            if touchLocation.y <= originalCenter.y {
+                let transform = CGAffineTransform(rotationAngle: CGFloat(defaultRotationAngleInRadians) * translation.x/100.0)
+                self.transform = transform
+                sender.view?.center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y)
+            } else {
+                let transform = CGAffineTransform(rotationAngle: CGFloat(-defaultRotationAngleInRadians) * translation.x/100.0)
+                self.transform = transform
+                sender.view?.center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y)
+            }
         } else if sender.state == .ended {
             
         }
@@ -63,5 +75,19 @@ class DraggableImageView: UIView {
         
     }
     
-    func convert
+    
+    
+    @IBAction func onRotationGesture(_ sender: UIRotationGestureRecognizer) {
+        
+    }
+    
+}
+
+extension Int {
+    var degreesToRadians: Double { return Double(self) * .pi / 180 }
+    var radiansToDegrees: Double { return Double(self) * 180 / .pi }
+}
+extension FloatingPoint {
+    var degreesToRadians: Self { return self * .pi / 180 }
+    var radiansToDegrees: Self { return self * 180 / .pi }
 }

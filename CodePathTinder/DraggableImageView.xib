@@ -23,6 +23,7 @@
                     <gestureRecognizers/>
                     <connections>
                         <outletCollection property="gestureRecognizers" destination="7F1-lj-MXz" appends="YES" id="edR-hg-RDy"/>
+                        <outletCollection property="gestureRecognizers" destination="aNJ-QW-ARc" appends="YES" id="slT-fk-mXo"/>
                     </connections>
                 </imageView>
             </subviews>
@@ -33,6 +34,11 @@
                 <action selector="onPanGesture:" destination="-1" id="R1q-CU-eP2"/>
             </connections>
         </panGestureRecognizer>
+        <rotationGestureRecognizer id="aNJ-QW-ARc">
+            <connections>
+                <action selector="onRotationGesture:" destination="-1" id="3az-9U-HeU"/>
+            </connections>
+        </rotationGestureRecognizer>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
