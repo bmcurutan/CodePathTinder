@@ -22,24 +22,21 @@
                                 <frame key="frameInset" minY="460" width="320" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ryan" id="K3J-3K-pHc">
-                                <frame key="frameInset" minX="8" minY="117" width="304" height="304"/>
+                            <view clipsSubviews="YES" contentMode="scaleAspectFill" misplaced="YES" id="pdr-1R-GKo" customClass="DraggableImageView" customModule="CodePathTinder" customModuleProvider="target">
+                                <frame key="frameInset" minX="8" minY="72" width="304" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="fJy-le-FY1" appends="YES" id="GWY-PW-nxs"/>
-                                </connections>
-                            </imageView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="imageView" destination="pdr-1R-GKo" id="5SX-Bn-rwG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="fJy-le-FY1">
-                    <connections>
-                        <action selector="onPanGesture:" destination="BYZ-38-t0r" id="8Uj-s9-iGs"/>
-                    </connections>
-                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="85" y="154"/>
         </scene>
@@ -47,7 +44,6 @@
     <resources>
         <image name="action_buttons" width="320" height="108"/>
         <image name="nav_bar" width="320" height="65"/>
-        <image name="ryan" width="449" height="514"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

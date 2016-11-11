@@ -10,12 +10,13 @@ import UIKit
 
 class CardsViewController: UIViewController {
 
-    var originalCenter: CGPoint!
+
+    @IBOutlet weak var imageView: DraggableImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        imageView.image = UIImage(named: "ryan")
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,21 +24,6 @@ class CardsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func onPanGesture(_ sender: UIPanGestureRecognizer) {
-        
-        let translation = sender.translation(in: view)
-        
-        if sender.state == .began {
-            originalCenter = sender.view?.center
-        } else if sender.state == .changed {
-            sender.view?.center = CGPoint(x: originalCenter.x + translation.x, y: originalCenter.y)
-        } else if sender.state == .ended {
-            
-        }
-        
-        
-    }
     
 
 
