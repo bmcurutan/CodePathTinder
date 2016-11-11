@@ -25,7 +25,11 @@
                             <view clipsSubviews="YES" contentMode="scaleAspectFill" misplaced="YES" id="pdr-1R-GKo" customClass="DraggableImageView" customModule="CodePathTinder" customModuleProvider="target">
                                 <frame key="frameInset" minX="8" minY="72" width="304" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="33k-ZO-tRT" appends="YES" id="QYn-Oj-LDg"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -37,6 +41,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="33k-ZO-tRT">
+                    <connections>
+                        <action selector="onTapImageView:" destination="BYZ-38-t0r" id="n6P-fL-0Ae"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="85" y="154"/>
         </scene>

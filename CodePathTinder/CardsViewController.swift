@@ -13,7 +13,6 @@ class CardsViewController: UIViewController {
 
     @IBOutlet weak var imageView: DraggableImageView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.image = UIImage(named: "ryan")
@@ -22,6 +21,13 @@ class CardsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func onTapImageView(_ sender: UITapGestureRecognizer) {
+        
+        let profileVC = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
+        profileVC.image = imageView.image
+        self.present(profileVC, animated: true, completion: nil)
     }
     
     

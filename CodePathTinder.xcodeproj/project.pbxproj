@@ -14,6 +14,8 @@
 		67D8D6421DD5328F00B6DE19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67D8D6401DD5328F00B6DE19 /* LaunchScreen.storyboard */; };
 		67D8D64C1DD5724F00B6DE19 /* DraggableImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D8D64B1DD5724F00B6DE19 /* DraggableImageView.xib */; };
 		67D8D64E1DD5728400B6DE19 /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D8D64D1DD5728400B6DE19 /* DraggableImageView.swift */; };
+		67D8D6511DD5861F00B6DE19 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D8D64F1DD5861F00B6DE19 /* ProfileViewController.swift */; };
+		67D8D6521DD5861F00B6DE19 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D8D6501DD5861F00B6DE19 /* ProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		67D8D6431DD5328F00B6DE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67D8D64B1DD5724F00B6DE19 /* DraggableImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DraggableImageView.xib; sourceTree = "<group>"; };
 		67D8D64D1DD5728400B6DE19 /* DraggableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
+		67D8D64F1DD5861F00B6DE19 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		67D8D6501DD5861F00B6DE19 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				67D8D6391DD5328F00B6DE19 /* CardsViewController.swift */,
 				67D8D64B1DD5724F00B6DE19 /* DraggableImageView.xib */,
 				67D8D64D1DD5728400B6DE19 /* DraggableImageView.swift */,
+				67D8D64F1DD5861F00B6DE19 /* ProfileViewController.swift */,
+				67D8D6501DD5861F00B6DE19 /* ProfileViewController.xib */,
 				67D8D63B1DD5328F00B6DE19 /* Main.storyboard */,
 				67D8D63E1DD5328F00B6DE19 /* Assets.xcassets */,
 				67D8D6401DD5328F00B6DE19 /* LaunchScreen.storyboard */,
@@ -132,6 +138,7 @@
 				67D8D64C1DD5724F00B6DE19 /* DraggableImageView.xib in Resources */,
 				67D8D6421DD5328F00B6DE19 /* LaunchScreen.storyboard in Resources */,
 				67D8D63F1DD5328F00B6DE19 /* Assets.xcassets in Resources */,
+				67D8D6521DD5861F00B6DE19 /* ProfileViewController.xib in Resources */,
 				67D8D63D1DD5328F00B6DE19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +152,7 @@
 			files = (
 				67D8D63A1DD5328F00B6DE19 /* CardsViewController.swift in Sources */,
 				67D8D64E1DD5728400B6DE19 /* DraggableImageView.swift in Sources */,
+				67D8D6511DD5861F00B6DE19 /* ProfileViewController.swift in Sources */,
 				67D8D6381DD5328F00B6DE19 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
